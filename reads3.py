@@ -149,12 +149,12 @@ def create_comparative_visualizations(df):
         f"{checks_passed.sum()}/{total_checks.sum()}"
     )
 
-    # Overall status
-    overall_status = "✅ PASSED" if (checks_passed == total_checks).all() else "❌ FAILED"
-    summary_cols[2].metric(
-        "Overall Status",
-        overall_status
-    )
+    # # Overall status
+    # overall_status = "✅ PASSED" if (checks_passed == total_checks).all() else "❌ FAILED"
+    # summary_cols[2].metric(
+    #     "Overall Status",
+    #     overall_status
+    # )
 
 
 def main():
